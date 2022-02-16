@@ -96,5 +96,5 @@ def main(file_name):
     print_start()
     good_parse(json_f)
 
-if __name__ == "__main__":
-    main()
+
+main("facebook.json")
