@@ -82,7 +82,7 @@ def good_parse(json):
 
     if type(json) == int or type(json) == str:
         print("\n")
-        print("Here is what you've been locking for:")
+        print("Here is what you've been looking for:")
         print("\n")
         print(json)
         print("\n")
