@@ -17,6 +17,7 @@ def get_keys(dict):
         list.append(key)
     return list
 
+
 def open_file(json_file_name):
     """
     Opens the file and creates the dict
@@ -27,6 +28,7 @@ def open_file(json_file_name):
         info = json.load(file)
     return info
 
+
 def print_start():
     """
     Prints the first two lines
@@ -34,6 +36,7 @@ def print_start():
 
     print("Hi, you can start the review")
     print("\n")
+
 
 def good_parse(json):
     """
@@ -59,7 +62,7 @@ def good_parse(json):
             print("Reboot the progarm and try again")
             print("\n")
             exit()
-        
+
         good_parse(json[user_input])
 
     if type(json) == list:
@@ -87,7 +90,7 @@ def good_parse(json):
         print(json)
         print("\n")
 
-# good_parse(open_file("kved.json"))
+
 def main(file_name):
     """
     Main func
@@ -95,6 +98,3 @@ def main(file_name):
     json_f = open_file(file_name)
     print_start()
     good_parse(json_f)
-
-
-main("facebook.json")
